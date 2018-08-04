@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="UTF-8">
+<title>Trivia Game</title>
+	<!-- <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+
+<body>
+<div class="container">
+    <h1>Shark Quiz, ohh ha ha!!</h1>
+    <div class="timer">
+        <h3>Countdown<span id="digits">30</span> <span id="timeup" class="hidden">Time's up!</span></h3>
+    </div>
+
+    <div class="trivia">
+        <div id="shark-quiz"><p>Test your knowledge on how much you know about sharks!<br><br>Take a dive and try your luck</p><br>
+        <p>Press <strong>'NEW GAME' </strong>to begin a new Game</p></div>
+    
+        <div id="correct" class="hidden">
+            <h2>CORRECT!</h2>
+        </div>
+        <div id="incorrect" class="hidden">
+            <h2>INCORRECT</h2>
+            <p id="correctanswer">The correct answer was:</p>
+        </div>
+
+        <div id="gameOver" class="hidden">
+            <h2>GAME OVER</h2>
+        </div>
+        <div id="score" class="hidden">
+            <p>You answered: <span id="numCorrect">of <span id="totalQuestions">13</span>questions correctly</p>
+        </div>
+
+        <div id="question_holder">
+            <div class="questions" id="question1">
+                <h3 class"questions">what kind of category do sharks, rays, and skates belong to?</h3><br>
+                <ul class="answers">
+                    <input type="radio" name="q1" value="incorrect"> all belong to the category of venomous category<br>
+                    <input type="radio" name="q1" value="correct"> all belong to the category of cartilaginous fish<br>
+                    <input type="radio" name="q1" value="incorrect"> all belong to the category of vertebrae<br>
+                    <input type="radio" name="q1" value="incorrect"> all belong to the category of family matters<br>
+                </ul>
+            </div>
+            <div class="questions" id="question2">
+                <h3 class"questions">What is the fastest shark</h3><br>
+                <ul class="answers">
+                    <input type="radio" name="q2" value="incorrect"> a cheetah shark<br>
+                    <input type="radio" name="q2" value="incorrect"> a great white shark<br>
+                    <input type="radio" name="q2" value="incorrect"> a whale shark<br>
+                    <input type="radio" name="q2" value="correct"> a mako shark<br>
+                </ul>
+            </div>
+            <div class="questions" id="question3">
+                <h3 class"questions">what is the largest shark?</h3><br>
+                <ul class="answers">
+                    <input type="radio" name="q3" value="incorrect"> a great white shark<br>
+                    <input type="radio" name="q3" value="correct"> a whale shark<br>
+                    <input type="radio" name="q3" value="incorrect">a hammer shark<br>
+                    <input type="radio" name="q3" value="incorrect">a cat shark<br>
+                </ul>
+            </div>  
+            <div class="questions" id="question4">
+                <h3 class"questions">how many species of shark have been discovered?</h3><br>
+                <ul class="answers">
+                    <input type="radio" name="q4" value="correct"> there are over 440 species<br>
+                    <input type="radio" name="q4" value="incorrect">there are 200 species<br>
+                    <input type="radio" name="q4" value="incorrect">no one knows for sure<br>
+                    <input type="radio" name="q4" value="incorrect">5<br>
+                </ul>
+            </div> 
+             <div class="questions" id="question5">
+                <h3 class"questions">Do sharks have bones skeletons?</h3><br>
+                <ul class="answers">
+                    <input type="radio" name="q5" value="incorrect">no one knows for sure<br>
+                    <input type="radio" name="q5" value="incorrect"> yes they do.<br>
+                    <input type="radio" name="q5" value="correct">They do not have bony skeletons. <br>
+                 </ul>
+            </div> 
+            <div class="questions" id="question6">
+                 <h3 class"questions">are sharks mammals?</h3><br>
+                <ul class="answers">
+                    <input type="radio" name="q6" value="incorrect"> yes they are<br>
+                    <input type="radio" name="q6" value="incorrect">no, the are a amphibians<br>
+                    <input type="radio" name="q6" value="correct">no, they are a species of fish<br>
+                    <input type="radio" name="q6" value="incorrect">no, they are reptiles<br>
+                </ul>
+            </div>  
+            <div class="questions" id="question7">
+                <h3 class"questions">Which shark can walk on land?</h3><br>
+                <ul class="answers">
+                    <input type="radio" name="q7" value="incorrect"> great white shark<br>
+                    <input type="radio" name="q7"  value="incorrect">hammer shark<br>
+                    <input type="radio" name="q7" value="correct">Epaulette sharks<br>
+                    <input type="radio" name="q7"  value="incorrect">tiger shark<br>
+                </ul>
+            </div>                              
+
+            <div class="questions" id="question8">
+                <h3 class"questions">what is the smallest shark?</h3><br>
+                <ul class="answers">
+                    <input type="radio" name="q8" value="correct"> Dwarf Lantern-shark<br>
+                    <input type="radio" name="q8" value="incorrect">Mackerel Sharks<br>
+                    <input type="radio" name="q8" value="correct">Bullhead Sharks<br>
+                    <input type="radio" name="q8"  value="incorrect">Saw Sharks<br>
+                </ul>
+            </div> 
+            <div class="questions" id="question9">
+                <h3 class"questions">what other species is related to the sharks?</h3><br>
+                <ul class="answers">
+                    <input type="radio" name="q9" value="correct">snakes<br>
+                    <input type="radio" name="q9" value="correct">rays<br>
+                    <input type="radio" name="q9" value="incorrect">alligators<br>
+                    <input type="radio" name="q9"  value="incorrect">eels<br>
+                </ul>
+            </div>
+            <div class="questions" id="question10">
+                <h3 class"questions">what shark has parasites in its eyes?</h3><br>
+                <ul class="answers">
+                    <input type="radio" name="q10" value="incorrect">hammerhead shark<br>
+                    <input type="radio" name="q10" value="incorrect">lemon shark<br>
+                    <input type="radio" name="q10" value="incorrect">zebra sharks<br>
+                    <input type="radio" name="q10"  value="correct">Greenland sharks<br>
+                </ul>
+            </div>
+
+            <div class="questions" id="question11">
+                <h3 class"questions">What shark live and hunt on the coast of every continent in the world the except Antarctica?</h3><br>
+                <ul class="answers">
+                    <input type="radio" name="q11" value="correct">great white shark<br>
+                    <input type="radio" name="q11" value="incorrect">lemon shark<br>
+                    <input type="radio" name="q11" value="incorrect">zebra sharks<br>
+                    <input type="radio" name="q11"  value="incorrect">silky sharks<br>
+                </ul>
+            </div>
+
+                <div class="questions" id="question12">
+                    <h3 class"questions">Which shark can live in both fresh and saltwater?</h3><br>
+                    <ul class="answers">
+                        <input type="radio" name="q12" value="incorrect">Sand Tiger Shark<br>
+                        <input type="radio" name="q12" value="incorrect">Blue Shark<br>
+                        <input type="radio" name="q12" value="correct">Bull sharks<br>
+                        <input type="radio" name="q12"  value="incorrect">Basking Shark<br>
+                    </ul>
+                </div>
+                <div class="questions" id="question13">
+                    <h3 class"questions">How are sharks different from bony fish?</h3><br>
+                    <ul class="answers">
+                        <input type="radio" name="q13" value="incorrect">because they eat humans<br>
+                        <input type="radio" name="q13" value="correct">because they have eyelids.<br>
+                        <input type="radio" name="q13" value="incorrect">because they have teeth<br>
+                        <input type="radio" name="q13"  value="incorrect">because they don't sleep<br>
+                    </ul>
+                </div>
+
+                <div class="questions" id="question14">
+                    <h3 class"questions">Can sharks swim backwards?</h3><br>
+                    <ul class="answers">
+                        <input type="radio" name="q14" value="correct">no, sharks can only swim forwards<br>
+                        <input type="radio" name="q14" value="incorrect"> yes, sharks can swim backwards.<br>
+                        <input type="radio" name="q14" value="incorrect">no, sharks can only swim sideways<br>
+                        <input type="radio" name="q14"  value="incorrect">yes, sharks can even swim sideways<br>
+                    </ul>
+                </div>
+                <div class="questions" id="question15">
+                        <h3 class"questions">Sharks have six senses, what are they?</h3><br>
+                        <ul class="answers">
+                            <input type="radio" name="q15" value="incorrect">Sight, smell, touch, taste, hearing, and speed.<br>
+                            <input type="radio" name="q15" value="incorrect">Sight, smell, touch, taste, hearing, and ghosts.<br>
+                            <input type="radio" name="q15" value="incorrect">Sight, smell, touch, taste, hearing, and dancing.<br>
+                            <input type="radio" name="q15"  value="correct">Sight, smell, touch, taste, hearing, and electroreception.<br>
+                        </ul>
+                    </div>
+
+                    <!-- <div class="questions" id="question16">
+                        <h3 class"questions">What is the slowest shark</h3><br>
+                        <ul class="answers">
+                            <input type="radio" name="q16" value="incorrect">the sawshark<br>
+                            <input type="radio" name="q16" value="incorrect">Great White Shark<br>
+                            <input type="radio" name="q16" value="correct">Greenland Shark<br>
+                            <input type="radio" name="q16"  value="incorrect">There's no slow shark<br>
+                        </ul>
+                    </div>                    -->
+        </div>
+
+    </div>
+    <button class="btn" id="start">New Game</button>
+</div>
+<!-- jQuery tag -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+
+<!-- jquery script tag -->
+<script type="text/javascript" src="assets/javascript/apps.js"></script>
+</body>
